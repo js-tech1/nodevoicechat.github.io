@@ -1,0 +1,39 @@
+<header>
+    <div class="user-controller">
+        <p id="username-label"></p>
+        <div id="username-div">
+            <input type="text" id="username">
+            <button class="username-btn" onclick="changeUsername()">Change username</button>
+
+        </div>
+    </div>
+
+    {{!-- <div class="controller">
+        <button class="control-btn disable-btn" onclick="toggleMicrophone(this)">Open microphone</button>
+        <button class="control-btn disable-btn" onclick="toggleMute(this)">Mute</button>
+        <button class="control-btn disable-btn" onclick="toggleConnection(this)">Go online</button>
+    </div> --}}
+    <div class="controller">
+        <button class="control-btn disabled" onclick="toggleMicrophone(this)">
+            <i class="icon fas fa-microphone"></i>
+        </button>
+
+        <button class="control-btn disabled" onclick="toggleMute(this)">
+            <i class="icon fas fa-volume-mute"></i>
+        </button>
+
+        <button class="control-btn disabled" onclick="toggleConnection(this)">
+            <i class="icon fas fa-globe"></i>
+        </button>
+    </div>
+</header>
+<h2>users list</h2>
+<ul class="users" id="users">
+
+
+</ul>
+
+<script src="script.js"></script>
+{{!--
+<script type="module" src="script.js"></script> --}}
+<link rel="stylesheet" href="style.css">
